@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="html" href="sprite.html" />
+    <title>Lesson</title>
+  </head>
+  <body>
+    <!-- SVG Спрайт -->
+
+    <svg display="none">
+      <!-- Git -->
+      <svg>
+        <!-- Watch -->
+
+        <symbol id="watch" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="M464 256A208 208 0 1 1 48 256a208
+                       208 0 1 1 416 0zM0 256a256 256 0 1
+                       0 512 0A256 256 0 1 0 0 256zM232
+                       120l0 136c0 8 4 15.5 10.7 20l96
+                       64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280
+                       243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Arrows -->
+
+        <symbol id="arrows" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="M439 7c9.4-9.4 24.6-9.4 33.9 0l32
+               32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39
+               39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5
+               14.8-22.2 14.8l-144 0c-13.3
+               0-24-10.7-24-24l0-144c0-9.7
+               5.8-18.5 14.8-22.2s19.3-1.7 
+               26.2 5.2l39 39L439 7zM72 272l144
+               0c13.3 0 24 10.7 24 24l0 144c0
+               9.7-5.8 18.5-14.8 22.2s-19.3
+               1.7-26.2-5.2l-39-39L73
+               505c-9.4 9.4-24.6 9.4-33.9 
+               0L7 473c-9.4-9.4-9.4-24.6
+               0-33.9l87-87L55 313c-6.9-6.9-8.9-17.2-5.2-26.2s12.5-14.8
+               22.2-14.8z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Inbox -->
+
+        <symbol id="inbox" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="M121 32C91.6 32 66 52 58.9
+               80.5L1.9 308.4C.6 313.5 0 318.7 0 
+               323.9L0 416c0 35.3 28.7 64 64 64l384
+               0c35.3 0 64-28.7 64-64l0-92.1c0-5.2-.6-10.4-1.9-15.5l-57-227.9C446
+               52 420.4 32 391 32L121 32zm0 
+               64l270 0 48 192-51.2 0c-12.1
+               0-23.2 6.8-28.6 17.7l-14.3
+               28.6c-5.4 10.8-16.5 17.7-28.6
+               17.7l-120.4 0c-12.1
+               0-23.2-6.8-28.6-17.7l-14.3-28.6c-5.4-10.8-16.5-17.7-28.6-17.7L73 
+               288 121 96z"
+            />
+          </g>
+        </symbol>
+      </svg>
+
+      <!-- Social -->
+      <svg>
+        <!-- Twitter -->
+        <symbol id="twitter" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 
+              138.7-105.6 298.6-298.6 298.6-59.5
+              0-114.7-17.2-161.1-47.1 8.4 1 16.6
+              1.3 25.3 1.3 49.1 0 94.2-16.6 
+              130.3-44.8-46.1-1-84.8-31.2-98.1-72.8
+              6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 
+              27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14
+              7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4
+              0-19.5 5.2-37.4 14.3-53 51.7 63.7
+              129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24
+              0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7
+              76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4
+              44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3
+              20.8-32.2 39.3-52.6 54.3z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Facebook -->
+        <symbol id="facebook" viewBox="0 0 512 512">
+          <g>
+            <path
+              d="M512 256C512 114.6 397.4 0
+            256 0S0 114.6 0 256C0 376 82.7
+            476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 
+            39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7
+            6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 
+            15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8
+            494.8 512 386.9 512 256h0z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Pinterest -->
+        <symbol id="pinterest" viewBox="0 0 384 512">
+          <g>
+            <path
+              d="M204 6.5C101.4 6.5 0 74.9 0 
+            185.6 0 256 39.6 296 63.6 296c9.9
+            0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8
+            0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 
+            118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9
+            0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4
+            0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6
+            50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 
+            37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69
+            48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3
+            36 106.2 0 153.9-103.5 153.9-196.8C384 71.3
+            298.2 6.5 204 6.5z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Google -->
+        <symbol id="google" viewBox="0 0 488 512">
+          <g>
+            <path
+              d="M488 261.8C488 403.3 391.1 504 248 504
+            110.8 504 0 393.2 0 256S110.8 8 248
+            8c66.8 0 123 24.5 166.3 64.9l-67.5
+            64.9C258.5 52.6 94.3 116.6 94.3
+            256c0 86.5 69.1 156.6 153.7 156.6
+            98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3
+            12.7 3.9 24.9 3.9 41.4z"
+            />
+          </g>
+        </symbol>
+
+        <!-- Webflow -->
+        <symbol id="webflow" viewBox="0 0 640 512">
+          <g>
+            <path
+              d="M640 64L435.8 463.2H244l85.5-165.5h-3.8C255.1
+            389.3 149.9 449.5 0 463.2V300.1s95.9-5.7
+            152.3-64.9H0V64H171.1V204.8l3.8 0L244.9
+            64H374.3V203.9l3.8 0L450.7 64H640z"
+            />
+          </g>
+        </symbol>
+      </svg>
+    </svg>
+
+    <!-- Заголовок -->
+
+    <header class="header">
+      <div class="container header__container">
+        <h1 class="logo">Velocity</h1>
+
+        <nav class="header__nav">
+          <ul>
+            <li><a href="#main">Home</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Главная -->
+
+    <main id="main" class="main">
+      <!-- Секция приветствия -->
+
+      <section class="welcome">
+        <div class="container">
+          <h2 class="welcome__title">This is Velocity</h2>
+          <div class="welcome__links">
+            <a href="#" class="link__primary">sing up</a>
+            <a href="#" class="link">Learn more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция о странице -->
+
+      <section class="about common-section">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="title">What we do</h3>
+
+            <p class="subtitle">This is some text inside of a div block</p>
+          </div>
+
+          <div class="cards-wrapper">
+            <div class="card">
+              <svg class="icon-card" width="50" height="50">
+                <use xlink:href="#watch"></use>
+              </svg>
+              <h4>Graphic dising</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro corrupti quam quidem numquam perspiciatis.!
+              </p>
+            </div>
+
+            <div class="card">
+              <svg class="icon-card" width="50" height="50">
+                <use xlink:href="#arrows"></use>
+              </svg>
+              <h4>Awesome code</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro corrupti quam quidem numquam perspiciatis.!
+              </p>
+            </div>
+
+            <div class="card">
+              <svg class="icon-card" width="50" height="50">
+                <use xlink:href="#inbox"></use>
+              </svg>
+              <h4>Free template</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro corrupti quam quidem numquam perspiciatis.!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция сервиса -->
+
+      <section class="services common-section common-section--dark">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="title">Services</h3>
+
+            <p class="subtitle">This is some text inside of a div block</p>
+          </div>
+
+          <div class="cards-wrapper">
+            <div class="card">
+              <img src="images/backg/Bridge.jpg" alt="Bridge" />
+
+              <h4>Services one</h4>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro corrupti quam quidem numquam perspiciatis.!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro.
+              </p>
+
+              <a href="#" class="link">Learn more</a>
+            </div>
+
+            <div class="card">
+              <img src="images/backg/DJ.jpg" alt="Bridge" />
+
+              <h4>Services two</h4>
+
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro corrupti quam quidem numquam perspiciatis.!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Praesentium porro.
+              </p>
+
+              <a href="#" class="link">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция прокрутки -->
+
+      <section class="tab-section common-section">
+        <div class="container">
+          <div class="title-wrapper">
+            <h3 class="title">Tab Section</h3>
+
+            <p class="subtitle">This is some text inside of a div block</p>
+          </div>
+
+          <div class="tabs">
+            <div class="tabs__nav">
+              <button class="active" type="button">Tab Button 1</button>
+              <button type="button">Tab Button 2</button>
+              <button type="button">Tab Button 3</button>
+            </div>
+
+            <!-- 1 -->
+
+            <div class="tabs__item">
+              <img src="images/backg/Man.jpg" alt="Man" />
+              <h4>Some title here</h4>
+              <div class="tabs__desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+                  aut in deserunt blanditiis molestiae et provident saepe
+                  expedita beatae. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Quis aut in deserunt blanditiis molestiae et
+                  provident saepe expedita beatae. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Quis aut in deserunt blanditiis
+                  molestiae et provident saepe expedita beatae.
+                </p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+
+            <div class="tabs__item">
+              <img src="images/backg/Girl.jpg" alt="Man" />
+              <h4>Some title here</h4>
+              <div class="tabs__desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+                  aut in deserunt blanditiis molestiae et provident saepe
+                  expedita beatae. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Quis aut in deserunt blanditiis molestiae et
+                  provident saepe expedita beatae. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Quis aut in deserunt blanditiis
+                  molestiae et provident saepe expedita beatae.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3 -->
+
+            <div class="tabs__item">
+              <img src="images/backg/Nature.jpg" alt="Man" />
+              <h4>Some title here</h4>
+              <div class="tabs__desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis
+                  aut in deserunt blanditiis molestiae et provident saepe
+                  expedita beatae. Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit. Quis aut in deserunt blanditiis molestiae et
+                  provident saepe expedita beatae. Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit. Quis aut in deserunt blanditiis
+                  molestiae et provident saepe expedita beatae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="footer">
+      <div class="footer__desc">
+        <div class="container footer__desc-container">
+          <div class="footer__about">
+            <h4>About Velocity</h4>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus facilis molestias, repellendus cupiditate earum porro
+              libero saepe ducimus quos exercitationem fugiat laboriosam
+              repellat soluta non accusamus, necessitatibus temporibus! Iste,
+              reiciendis.
+            </p>
+          </div>
+
+          <div class="footer__links">
+            <h4>Useful links</h4>
+            <ul>
+              <li><a href="#">Phasellus gravida semper nisi</a></li>
+              <li><a href="#">Suspendisse nisl elit</a></li>
+              <li><a href="#">Dellentesque habitent morbi</a></li>
+              <li><a href="#">Etiam sollicitudin ipsum</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__social">
+            <h4>Social</h4>
+            <ul>
+              <li>
+                <svg class="icon-social active-social" width="25" height="25">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+
+                <a href="#">Twitter</a>
+              </li>
+
+              <li>
+                <svg class="icon-social" width="25" height="25">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+
+                <a href="#">Facebook</a>
+              </li>
+
+              <li>
+                <svg class="icon-social" width="25" height="25">
+                  <use xlink:href="#pinterest"></use>
+                </svg>
+
+                <a href="#">Pinterest</a>
+              </li>
+
+              <li>
+                <svg class="icon-social" width="25" height="25">
+                  <use xlink:href="#google"></use>
+                </svg>
+
+                <a href="#">Google</a>
+              </li>
+
+              <li>
+                <svg class="icon-social" width="25" height="25">
+                  <use xlink:href="#webflow"></use>
+                </svg>
+
+                <a href="#">Webflow</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Копирайт -->
+
+      <div class="footer__copy">
+        <div class="container">
+          <p>Copyright Velocity Inc. Made in Webflow</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
