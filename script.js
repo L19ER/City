@@ -29,7 +29,7 @@ anchors.forEach((anc) => {
     const elem = document.querySelector(id);
 
     window.scroll({
-      top: elem.offsetTop - 74,
+      top: elem.offsetTop - 200,
       behavior: "smooth",
     });
   });
